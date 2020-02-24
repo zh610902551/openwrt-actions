@@ -10,9 +10,9 @@ name: X64-Master
 on:
   schedule:
     - cron: 0 20 * * *
-  push:
-    branches: 
-      - master
+#  push:
+#    branches: 
+#      - master
 
 jobs:
   build:
@@ -47,6 +47,11 @@ jobs:
           cd openwrt
           rm -f .config
           cp ../x64-master .config
+          
+    - name: Make Defconfig
+      run: |
+          cd openwrt
+          make defconfig
 
     - name: Make download
       run: |
