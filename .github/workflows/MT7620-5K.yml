@@ -8,15 +8,15 @@
 name: MT7620-5K
 
 on:
-  release:
-    types: [Start]
-  # push:
-  # branches:
-   #  - master
+ # release:
+  #  types: [Start]
+   push:
+    branches:
+      - master
     paths:
       - 'MT7620-5K.config'
-  schedule:
-    - cron: 0 19 * * *
+ # schedule:
+  #  - cron: 0 19 * * *
 #  push:
 #    branches: 
 #      - master
