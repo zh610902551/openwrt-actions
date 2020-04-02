@@ -8,10 +8,10 @@
 name: MT7620-5K
 
 on:
- release:
+  release:
     types: [published]
-   push:
-    branches:
+    push:
+      branches:
       - master
     paths:
       - 'MT7620-5K.config'
