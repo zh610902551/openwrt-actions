@@ -10,7 +10,7 @@ name: MT7620-5K
 on:
   
   schedule:
-    - cron: 0 00 * * *
+    - cron: 16 00 * * *
 #  push:
 #    branches: 
 #      - master
