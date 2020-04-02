@@ -8,8 +8,8 @@
 name: MT7620-5K
 
 on:
- # release:
-  #  types: [Start]
+ release:
+    types: [published]
    push:
     branches:
       - master
